@@ -11,7 +11,6 @@ interface Client
 }
 
 
-require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const axios = require('axios');
@@ -19,7 +18,7 @@ const mongoose = require('mongoose');
 
 const PORT = 3001;
 const app = express();
-const connectionString = process.env.CONNECTION_STRING;
+const connectionString = 'mongodb+srv://wallacezampili:wz11200312ps@sharenergytest.e4buleb.mongodb.net/?retryWrites=true&w=majority';
 const ClientModel:Model<Client> = require('./models/Client');
 mongoose.set('strictQuery', false)
 
