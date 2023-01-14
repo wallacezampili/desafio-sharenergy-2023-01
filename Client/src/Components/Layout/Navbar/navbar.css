@@ -25,7 +25,7 @@
 }
 
 .nav_link:hover{
-    color: var(--secundary);
+    color: var(--secondary);
 }
 .nav_toggler {
     color: var(--font_color1);
