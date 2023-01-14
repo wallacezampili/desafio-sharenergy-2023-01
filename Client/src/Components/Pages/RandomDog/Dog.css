@@ -1,0 +1,25 @@
+.dog-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 80px;
+}
+.button{
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    font-size: 1.3em;
+    padding: 9px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+}
+
+.dog
+{
+    max-width: 90%;
+    max-height: 500px;
+}

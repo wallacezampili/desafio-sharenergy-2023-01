@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+  padding: 0;
+
+}
+:root
+{
+  --primary : #393E41;
+  --secondary: #D3D0CB;
+  --font_color1: #fff;
+  --btn_color: #fff;
+  --btn_border: #000;
+  --btn_hover: #ececec;
+}
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+

@@ -1,0 +1,17 @@
+.user-container
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .user-container
+    {
+        grid-template-columns: auto;
+    }
+    
+}

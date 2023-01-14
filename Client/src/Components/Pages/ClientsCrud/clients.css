@@ -1,0 +1,140 @@
+.clients-table {
+    border-collapse: collapse;
+    margin: 50px;
+    width: 80%;
+}
+
+.clients-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.clients-table tr th,
+.clients-table tr td {
+    text-align: center;
+    padding: 10px;
+    word-wrap: break-word;
+}
+
+.clients-table-header {
+    background-color: var(--primary);
+    color: #fff;
+}
+
+.clients-table-data:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.table-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.table-btn {
+    padding: 8px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+.table-delete {
+
+    border-color: #f5c6cb;
+    background-color: #721c24;
+
+}
+
+.table-delete:hover {
+    background-color: rgba(114, 28, 36, 0.7);
+}
+
+.table-edit {
+
+    border-color: #C3e6cb;
+    background-color: #155724;
+    
+}
+.edit-link{
+
+    text-decoration: none;
+    color: white;
+    width: 100%;
+}
+.table-edit:hover {
+    background-color: rgba(21, 87, 36, 0.7);
+}
+
+.form-toggler {
+    align-self: center;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width:500px) {
+
+    .clients-table tr {
+        display: block;  
+        margin: 50px 0px;
+        box-shadow: 0 0 15px 3px rgba(189, 189, 189, 0.3);
+    }
+    .clients-table-data:nth-child(even) {
+        background-color: #fff;
+    }
+    .clients-table tr td
+    {
+        text-align: right;
+        display: block;
+        color: var(--primary);
+    }
+    .clients-table-data td:nth-child(even)
+    {
+        background-color: rgba(189, 189, 189, 0.4);
+    }
+    .clients-table td::before
+    {
+        content: attr(data-title);
+        float: left;
+        padding: 3px 5px;
+        font-weight: bold;
+    }
+    
+    .clients-table thead {
+        display: none;
+    }
+
+    .table-actions {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .table-btn {
+        width: 85%;
+        margin: 15px;
+        color: white;
+        
+    }
+    .table-container
+    {
+        width: 70%;
+    }
+}
