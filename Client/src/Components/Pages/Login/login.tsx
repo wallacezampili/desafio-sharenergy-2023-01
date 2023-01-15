@@ -33,6 +33,12 @@ function Login() {
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     context?.login(username, password, remember);
+    if(!context?.authenticated)
+    {
+      setMessage(true);
+      setMessageType("error");
+      setMessageText("Username ou Password incorretos.")
+    }
     
   }
 
