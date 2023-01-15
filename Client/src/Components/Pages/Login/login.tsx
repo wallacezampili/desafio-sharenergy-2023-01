@@ -32,8 +32,8 @@ function Login() {
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    context?.login(username, password, remember);
-    if(!context?.authenticated)
+    let result = await context?.login(username, password, remember)
+    if(!result)
     {
       setMessage(true);
       setMessageType("error");
