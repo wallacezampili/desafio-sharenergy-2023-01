@@ -38,8 +38,9 @@ export function AuthProvider(props: React.PropsWithChildren) {
             console.log("Function Login");
             setAuthenticated(true);
             navigate("/");
+            return true;
           }
-
+          return false;
         }
       )
       .catch((err) => {
