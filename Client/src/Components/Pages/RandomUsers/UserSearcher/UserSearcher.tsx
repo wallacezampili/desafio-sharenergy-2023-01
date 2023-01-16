@@ -33,7 +33,7 @@ function UserSearcher(props:userProps) {
         <form className='searcher' >
             <div className='search-container'>
                 <input type="text" placeholder='Buscar Usuários' name='search' onChange={change}/>
-                <button type='submit'><Search /></button>
+                <Search />
             </div>
             <div className='select-container'>
                 <label htmlFor="filter">Filtrar por:</label>
