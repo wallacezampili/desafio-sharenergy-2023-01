@@ -16,3 +16,7 @@ O aplicativo solicitado foi desenvolvido com alguns frameworks javascript além 
 2. Depois da instalação das dependências use o comando `npm start` em ambas as pastas **Server** e **Client**, isso irá executar o Front-end e o Back-end da aplicação;
 
 > **Obs:** Para utilizar os comandos npm é necessário instalar o Node.js, disponível em: https://nodejs.org/en/download/
+
+## Vídeo no Youtube
+
+Um vídeo está disponível no youtube apresentando o projeto: https://www.youtube.com/watch?v=Mr07B9i8Ibs
