@@ -4,7 +4,8 @@ import {FiSearch as Search} from "react-icons/fi";
 
 interface userProps
 {
-    searchUsers: ((input : {search: string, filter: string}) => void)
+    searchUsers: ((input : {search: string, filter: string}) => void),
+    paginate: (page:number) => void
 }
 
 function UserSearcher(props:userProps) {
@@ -20,6 +21,10 @@ function UserSearcher(props:userProps) {
             ...searchValue,
             [e.target.name]: e.target.value
         };
+        if(e.target.name === "search")
+        {
+            props.paginate(1);
+        }
         setSearchValue(newValue);
         props.searchUsers(newValue)
     }
