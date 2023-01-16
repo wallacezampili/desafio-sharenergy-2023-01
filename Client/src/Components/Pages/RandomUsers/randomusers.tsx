@@ -26,7 +26,6 @@ function RandomUsers() {
   //PAGINATION
   var [resultsNumber, setResultsNumber] = useState(100); 
   var usersPerPage = 10;
-  console.log(resultsNumber);
 
   function setUsersPerPage()
   {
@@ -61,9 +60,10 @@ function RandomUsers() {
       return false;
     });
 
-    console.log(filterResults, input);
+   
     setResultsNumber(filterResults.length);
     setFilteredUsers(filterResults);
+    
   }
 
   useEffect(() => {
@@ -88,7 +88,7 @@ function RandomUsers() {
 
   return (
     <div className="pages-container">
-      <UserSearcher searchUsers={searchUsers}/>
+      <UserSearcher searchUsers={searchUsers} paginate={paginate}/>
       <UsersRender data={usersInPage} loading={loading}/>
 
       <Pagination
