@@ -16,7 +16,7 @@ function Input(props:InputData) {
     return ( 
         <div className="input-container">
             <label htmlFor={props.name}>{title}:</label>
-            <input type={props.type} placeholder={props.placeholder} defaultValue={props.defaultValue} name={props.name} onChange={props.handleChange}/>
+            <input type={props.type} placeholder={props.placeholder} defaultValue={props.defaultValue} name={props.name} onChange={props.handleChange} required/>
         </div>
      );
 }
